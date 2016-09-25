@@ -7,15 +7,14 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
-	<div class="txt">
-		<h1 class="dfont">Sistema Solar</h1>
-		<h4 class="ufont">by Paola Ortiz - Fátima Jácobo</h4>
+	<div id="carga">
+		<span class="inicio">Cargando...</span>
+		<img src="img/systemplanet.gif" alt="planetas" id="system">
 	</div>
-	 <!-- <div class="alert alert-info">
-    	<strong>Info!</strong> This alert box could indicate a neutral informative change or action.
-  	</div> -->
 	<div class="sistema">
 		<img src="img/Sun.gif" id="sun" class="sun">
 		<img src="img/mercury.gif" id="mercury" class="mercury">
@@ -43,6 +42,39 @@
       <a class="urano" title="uranus" href="#uranusinfo">Uranus</a>
       <a class="neptuno" title="neptune" href="#neptuneinfo">Neptune</a>
     </div>
+	<section id="principal" class="display">
+		<button type="button" id="boton">Descripción</button>
+		<div id="resultado" class="display" draggable="true"></div>
+		<div class="txt">
+			<h1 class="dfont">Sistema Solar</h1>
+			<h4 class="ufont">by Fátima Jácobo - Paola Ortiz de Zevallos</h4>
+		</div>
+		<div class="sistema">
+			<img src="img/Sun-0.jpg" id="sun" class="sun">
+			<img src="img/mercury-10.jpg" id="mercury" class="mercury">
+			<img src="img/Venus-17.jpg" id="venus" class="venus">
+			<img src="img/La-luna-0.jpg" id="moon" class="moon">
+			<img src="img/earth-9.jpg" id="tierra" class="tierra">
+			<img src="img/mars-42.jpg" id="mars" class="mars">
+			<img src="img/jupiter-0.jpg" id="jupiter" class="jupiter">
+			<img src="img/saturn-0.jpg" id="saturn" class="saturn">
+			<img src="img/Uranus-0.jpg" id="uranus" class="uranus">
+			<img src="img/neptune-10.jpg" id="neptune" class="neptune">
+		</div>
+		<!-- <div id="drop"></div> -->
+		<div id="data" class="ufont">
+	      <a class="sol" title="sun" href="#" id="solA">Sun</a>
+	      <a class="mercurio" title="mercury" href="#" id="mercurioA">Mercury</a>
+	      <a class="Venus" title="venus" href="#" id="venusA">Venus</a>
+	      <a class="luna" title="moon" href="#" id="lunaA">Moon</a>
+	      <a class="earth" title="earth" href="#" id="tierraA">Earth</a>
+	      <a class="marte" title="mars" href="#" id="marteA">Mars</a>
+	      <a class="Jupiter" title="jupiter" href="#" id="jupiterA">Jupiter</a>
+	      <a class="saturno" title="saturn" href="#" id="saturnoA">Saturn</a>
+	      <a class="urano" title="uranus" href="#" id="uranoA">Uranus</a>
+	      <a class="neptuno" title="neptune" href="#" id="neptunoA">Neptune</a>
+	    </div>
+	</section>
 	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
