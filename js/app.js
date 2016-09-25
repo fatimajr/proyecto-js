@@ -24,54 +24,56 @@ window.addEventListener("load", function(){
 	var neptuno = document.getElementById("neptunoA");
 	var neptune = document.getElementById("neptune");
 	var principal = document.getElementById("principal");
-	var boton = document.getElementById("boton");
-	// var drag = document.getElementById("drag");
-	var resultado = document.getElementById("resultado");
-	var drop = document.getElementById("drop");
-	var array = ["*Distancia a la Tierra: 149.6 millones km", "*Distancia a la Tierra: 384,400 km", "*Distancia al Sol: 57.91 millones km",
-	"*Distancia al Sol: 108.2 millones km", "*Distancia al Sol: 149.6 millones km", "*Distancia al Sol: 227.9 millones km",
-	"*Distancia al Sol: 778 millones de km", "*Distancia al Sol: 1.429 millones de km", "*Distancia al Sol: 2.870 millones de km",
-	"*Distancia al Sol: 4.501 millones de km"];
-	// var contador = 1;
+	var info = document.getElementById("info");
 
 	sol.addEventListener("dblclick", function() {
 		sun.setAttribute("src", "img/Sun.gif");
+		swal("Hola, soy el Sol!","La estrella más cercana a la Tierra y el mayor elemento del Sistema Solar.");
 	});
 
 	luna.addEventListener("dblclick", function() {
 		moon.setAttribute("src", "img/La-luna.gif");
+		swal("Hola, soy el Sol!","La estrella más cercana a la Tierra y el mayor elemento del Sistema Solar.");
 	});
 
 	mercurio.addEventListener("dblclick", function() {
 		mercury.setAttribute("src", "img/mercury.gif");
+		swal("Hola, soy Mercurio!", "El planeta más cercano al Sol y el más pequeño del Sistema Solar. Soy menor que la Tierra, pero más grande que la Luna.");
 	});
 
 	venus.addEventListener("dblclick", function() {
 		venusG.setAttribute("src", "img/Venus.gif");
+		swal("Hola, soy Venus!","El segundo planeta del Sistema Solar y el más semejante a La Tierra por su tamaño, masa, densidad y volumen.");
 	});
 
 	tierra.addEventListener("dblclick", function() {
 		earth.setAttribute("src", "img/earth.gif");
+		swal("Hola, soy La Tierra!", "El único planeta habitado. Estoy situado en la ecosfera, un espacio que rodea al Sol y que tiene las condiciones adecuadas para que exista vida.");
 	});
 
 	marte.addEventListener("dblclick", function() {
 		mars.setAttribute("src", "img/mars.gif");
+		swal("Hola, Marte!"," El cuarto planeta del Sistema Solar. Conocido como el planeta rojo por sus tonos rosados.");
 	});
 
 	jupiter.addEventListener("dblclick", function() {
 		jupiterG.setAttribute("src", "img/jupiter.gif");
+		swal("Hola, soy Jupiter!","Soy el planeta más grande del Sistema Solar, tengo casi dos veces y media materia que todos los otros planetas juntos y mi volumen es mil veces el de la Tierra.");
 	});
 
 	saturno.addEventListener("dblclick", function() {
 		saturn.setAttribute("src", "img/saturn.gif");
+		swal("Hola, soy Saturno!","El segundo planeta más grande del Sistema Solar y el único con anillos visibles desde la Tierra.");
 	});
 
 	urano.addEventListener("dblclick", function() {
 		uranus.setAttribute("src", "img/Uranus.gif");
+		swal("Hola, soy Urano!", "El séptimo planeta desde el Sol, el tercero más grande y el cuarto con más masa del Sistema Solar. Me descubrieron gracias al telescopio, en 1781.");
 	});
 
 	neptuno.addEventListener("dblclick", function() {
 		neptune.setAttribute("src", "img/neptune.gif");
+		swal("Hola, soy Neptuno!","Soy el planeta más exterior de los gigantes gaseosos. Fui descubierto en septiembre de 1846, gracias a predicciones matemáticas.");
 	});	
 
 	sun.addEventListener("mouseover", function() {
@@ -113,4 +115,8 @@ window.addEventListener("load", function(){
 	neptune.addEventListener("mouseover", function() {
 		this.setAttribute("src", "img/neptune-10.jpg");
 	});
+
+	info.addEventListener("dblclick", function(){
+		swal("Hola!","Sistema Solar Site fue desarrollado para fomentar el aprendizaje en las escuelas y puede ser implementado en la currícula de aprendizaje de niños de entre 6 a 12 años.");
+	})
 });
