@@ -20,16 +20,22 @@ a{
 .dfont{
 	font-family: 'Days One', sans-serif;
 }
+/*agregar*/
 .txt{
-	color: #CEF6F5;
+	color: white;
 	text-align: center;
 	font-size: 18px;
+	padding-top: 5%;
 }
+/*agregar*/
 #data{
 	text-align: center;
 	margin-bottom: 2%;
-	padding-top: 10%;
+	padding-top: 5%;
 }
+/*agregar*/
+
+
 .sun{
 	width: 30%;
 }
@@ -64,3 +70,12 @@ a{
 	width: 4%;
 	margin: 2%;
 }
+/*agregar*/
+.ft-1{
+	font-size: 1.5em;
+}
+.inline-block{
+	display: inline-block;
+}
+/*agregar*/
+.fondo2
