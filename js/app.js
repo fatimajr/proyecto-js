@@ -25,6 +25,9 @@ window.addEventListener("load", function(){
 	var neptune = document.getElementById("neptune");
 	var principal = document.getElementById("principal");
 	var info = document.getElementById("info");
+	var tresD = document.getElementById("tresD");
+	var imagenTresD = document.getElementById("imagenTresD");
+	var descarga = document.getElementById("descarga");
 
 	sol.addEventListener("dblclick", function() {
 		sun.setAttribute("src", "img/Sun.gif");
@@ -33,7 +36,7 @@ window.addEventListener("load", function(){
 
 	luna.addEventListener("dblclick", function() {
 		moon.setAttribute("src", "img/La-luna.gif");
-		swal("Hola, soy el Sol!","La estrella más cercana a la Tierra y el mayor elemento del Sistema Solar.");
+		swal("Hola, soy La Luna!","El único satélite natural de la Tierra y el único cuerpo del Sistema Solar que podemos ver en detalle.");
 	});
 
 	mercurio.addEventListener("dblclick", function() {
@@ -119,4 +122,19 @@ window.addEventListener("load", function(){
 	info.addEventListener("dblclick", function(){
 		swal("Hola!","Sistema Solar Site fue desarrollado para fomentar el aprendizaje en las escuelas y puede ser implementado en la currícula de aprendizaje de niños de entre 6 a 12 años.");
 	})
+
+	descarga.addEventListener("dblclick", function(){
+		swal("Descarga la app gratis!","Sistema Solar Site es una app gratuita. ¿Qué esperas para implementarla en tu escuela?.");
+
+	})
+
+	tresD.addEventListener("dblclick", function() {
+		imagenTresD.classList.remove("display");
+		imagenTresD.classList.add("fondo2");
+	});
+
+	tresD.addEventListener("click", function() {
+		imagenTresD.classList.remove("fondo2");
+		imagenTresD.classList.add("display");
+	});
 });
