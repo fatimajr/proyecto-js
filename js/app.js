@@ -24,15 +24,8 @@ window.addEventListener("load", function(){
 	var neptuno = document.getElementById("neptunoA");
 	var neptune = document.getElementById("neptune");
 	var principal = document.getElementById("principal");
-	var boton = document.getElementById("boton");
-	// var drag = document.getElementById("drag");
-	var resultado = document.getElementById("resultado");
-	var drop = document.getElementById("drop");
-	var array = ["*Distancia a la Tierra: 149.6 millones km", "*Distancia a la Tierra: 384,400 km", "*Distancia al Sol: 57.91 millones km",
-	"*Distancia al Sol: 108.2 millones km", "*Distancia al Sol: 149.6 millones km", "*Distancia al Sol: 227.9 millones km",
-	"*Distancia al Sol: 778 millones de km", "*Distancia al Sol: 1.429 millones de km", "*Distancia al Sol: 2.870 millones de km",
-	"*Distancia al Sol: 4.501 millones de km"];
-	// var contador = 1;
+	var tresD = document.getElementById("tresD");
+	var imagenTresD = document.getElementById("imagenTresD");
 
 	sol.addEventListener("dblclick", function() {
 		sun.setAttribute("src", "img/Sun.gif");
@@ -112,5 +105,15 @@ window.addEventListener("load", function(){
 
 	neptune.addEventListener("mouseover", function() {
 		this.setAttribute("src", "img/neptune-10.jpg");
+	});
+
+	tresD.addEventListener("dblclick", function() {
+		imagenTresD.classList.remove("display");
+		imagenTresD.classList.add("fondo2");
+	});
+
+	tresD.addEventListener("click", function() {
+		imagenTresD.classList.remove("fondo2");
+		imagenTresD.classList.add("display");
 	});
 });
