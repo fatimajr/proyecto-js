@@ -1,5 +1,5 @@
-window.setTimeout(function(){ document.getElementById("principal").classList.remove("display") }, 3000);
-window.setTimeout(function(){ document.getElementById("carga").classList.add("display") }, 3000);
+window.setTimeout(function(){ document.getElementById("principal").classList.remove("display") }, 2000);
+window.setTimeout(function(){ document.getElementById("carga").classList.add("display") }, 2000);
 
 window.addEventListener("load", function(){
 
@@ -28,56 +28,149 @@ window.addEventListener("load", function(){
 	var tresD = document.getElementById("tresD");
 	var imagenTresD = document.getElementById("imagenTresD");
 	var descarga = document.getElementById("descarga");
+	var infoSol = document.getElementById("infoSol");
+	var infoMercurio = document.getElementById("infoMercurio");
+	var infoVenus = document.getElementById("infoVenus");
+	var infoLuna = document.getElementById("infoLuna");
+	var infoTierra = document.getElementById("infoTierra");
+	var infoMarte = document.getElementById("infoMarte");
+	var infoJupiter = document.getElementById("infoJupiter");
+	var infoSaturno = document.getElementById("infoSaturno");
+	var infoUrano = document.getElementById("infoUrano");
+	var infoNeptuno = document.getElementById("infoNeptuno");
 
 	sol.addEventListener("dblclick", function() {
 		sun.setAttribute("src", "img/Sun.gif");
-		swal("Hola, soy el Sol!","La estrella más cercana a la Tierra y el mayor elemento del Sistema Solar.");
+		infoSol.classList.remove("display");
+		infoSol.classList.add("position");
+		infoSol.classList.add("positionSol");
+	});
+
+	sol.addEventListener("click", function() {
+		infoSol.classList.add("display");
+		infoSol.classList.remove("position");
+		infoSol.classList.remove("positionSol");
 	});
 
 	luna.addEventListener("dblclick", function() {
 		moon.setAttribute("src", "img/La-luna.gif");
-		swal("Hola, soy La Luna!","El único satélite natural de la Tierra y el único cuerpo del Sistema Solar que podemos ver en detalle.");
+		infoLuna.classList.remove("display");
+		infoLuna.classList.add("position");
+		infoLuna.classList.add("positionLuna");
+	
+	});
+
+	luna.addEventListener("click", function() {
+		infoLuna.classList.add("display");
+		infoLuna.classList.remove("position");
+		infoLuna.classList.remove("positionLuna");
+	
 	});
 
 	mercurio.addEventListener("dblclick", function() {
 		mercury.setAttribute("src", "img/mercury.gif");
-		swal("Hola, soy Mercurio!", "El planeta más cercano al Sol y el más pequeño del Sistema Solar. Soy menor que la Tierra, pero más grande que la Luna.");
+		infoMercurio.classList.remove("display");
+		infoMercurio.classList.add("position");
+		infoMercurio.classList.add("positionMercurio");
+	});
+
+	mercurio.addEventListener("click", function() {
+		infoMercurio.classList.add("display");
+		infoMercurio.classList.remove("position");
+		infoMercurio.classList.remove("positionMercurio");
 	});
 
 	venus.addEventListener("dblclick", function() {
 		venusG.setAttribute("src", "img/Venus.gif");
-		swal("Hola, soy Venus!","El segundo planeta del Sistema Solar y el más semejante a La Tierra por su tamaño, masa, densidad y volumen.");
+		infoVenus.classList.remove("display");
+		infoVenus.classList.add("position");
+		infoVenus.classList.add("positionVenus");
+	});
+
+	venus.addEventListener("click", function() {
+		infoVenus.classList.add("display");
+		infoVenus.classList.remove("position");
+		infoVenus.classList.remove("positionVenus");
 	});
 
 	tierra.addEventListener("dblclick", function() {
 		earth.setAttribute("src", "img/earth.gif");
-		swal("Hola, soy La Tierra!", "El único planeta habitado. Estoy situado en la ecosfera, un espacio que rodea al Sol y que tiene las condiciones adecuadas para que exista vida.");
+		infoTierra.classList.remove("display");
+		infoTierra.classList.add("position");
+		infoTierra.classList.add("positionTierra");
+	});
+
+	tierra.addEventListener("click", function() {
+		infoTierra.classList.add("display");
+		infoTierra.classList.remove("position");
+		infoTierra.classList.remove("positionTierra");
 	});
 
 	marte.addEventListener("dblclick", function() {
 		mars.setAttribute("src", "img/mars.gif");
-		swal("Hola, Marte!"," El cuarto planeta del Sistema Solar. Conocido como el planeta rojo por sus tonos rosados.");
+		infoMarte.classList.remove("display");
+		infoMarte.classList.add("position");
+		infoMarte.classList.add("positionMarte");
+		
+	});
+
+	marte.addEventListener("click", function() {
+		infoMarte.classList.add("display");
+		infoMarte.classList.remove("position");
+		infoMarte.classList.remove("positionMarte");
 	});
 
 	jupiter.addEventListener("dblclick", function() {
 		jupiterG.setAttribute("src", "img/jupiter.gif");
-		swal("Hola, soy Jupiter!","Soy el planeta más grande del Sistema Solar, tengo casi dos veces y media materia que todos los otros planetas juntos y mi volumen es mil veces el de la Tierra.");
+		infoJupiter.classList.remove("display");
+		infoJupiter.classList.add("position");
+		infoJupiter.classList.add("positionJupiter");
+	});
+
+	jupiter.addEventListener("click", function() {
+		infoJupiter.classList.add("display");
+		infoJupiter.classList.remove("position");
+		infoJupiter.classList.remove("positionJupiter");
 	});
 
 	saturno.addEventListener("dblclick", function() {
 		saturn.setAttribute("src", "img/saturn.gif");
-		swal("Hola, soy Saturno!","El segundo planeta más grande del Sistema Solar y el único con anillos visibles desde la Tierra.");
+		infoSaturno.classList.remove("display");
+		infoSaturno.classList.add("position");
+		infoSaturno.classList.add("positionSaturno");
+	});
+
+	saturno.addEventListener("click", function() {
+		infoSaturno.classList.add("display");
+		infoSaturno.classList.remove("position");
+		infoSaturno.classList.remove("positionSaturno");
 	});
 
 	urano.addEventListener("dblclick", function() {
 		uranus.setAttribute("src", "img/Uranus.gif");
-		swal("Hola, soy Urano!", "El séptimo planeta desde el Sol, el tercero más grande y el cuarto con más masa del Sistema Solar. Me descubrieron gracias al telescopio, en 1781.");
+		infoUrano.classList.remove("display");
+		infoUrano.classList.add("position");
+		infoUrano.classList.add("positionUrano");
+	});
+
+	urano.addEventListener("click", function() {
+		infoUrano.classList.add("display");
+		infoUrano.classList.remove("position");
+		infoUrano.classList.remove("positionUrano");
 	});
 
 	neptuno.addEventListener("dblclick", function() {
 		neptune.setAttribute("src", "img/neptune.gif");
-		swal("Hola, soy Neptuno!","Soy el planeta más exterior de los gigantes gaseosos. Fui descubierto en septiembre de 1846, gracias a predicciones matemáticas.");
+		infoNeptuno.classList.remove("display");
+		infoNeptuno.classList.add("position");
+		infoNeptuno.classList.add("positionNeptuno");		
 	});	
+
+	neptuno.addEventListener("click", function() {
+		infoNeptuno.classList.add("display");
+		infoNeptuno.classList.remove("position");
+		infoNeptuno.classList.remove("positionNeptuno");
+	});
 
 	sun.addEventListener("mouseover", function() {
 		this.setAttribute("src", "img/Sun-0.jpg");

@@ -129,3 +129,85 @@ a:hover {
 	top: 24%;
 	left: 47%;
 }
+
+.position {
+	text-align: center;
+	background-color: #424242;
+	color: #FFF;
+	font-family: "Days One", sans-serif;
+	border-radius: 5px;
+	width: 25%;
+	height: 24.5%;
+	position: absolute;
+	display: inline-block;
+}
+
+.positionSol {
+	top: 42%;
+	left: 27%;
+	font-size: 1.6em;
+	padding-top: 6px;
+}
+
+.positionMercurio {
+	top: 42%;
+	left: 35%;
+	font-size: 1.3em;
+	padding-top: 6px;
+}
+
+.positionVenus {
+	top: 42%;
+	left: 41%;
+	font-size: 1.3em;
+	padding-top: 6px;
+}
+
+.positionLuna {
+	top: 42%;
+	left: 46%;
+	font-size: 1.3em;
+	padding-top: 6px;	
+}
+
+.positionTierra {
+	top: 43%;
+	left: 53%;
+	font-size: 1.2em;
+	padding-top: 6px;	
+}
+
+.positionMarte {
+	top: 42%;
+	right: 17%;
+	font-size: 1.4em;
+	padding-top: 7px;
+}
+
+.positionJupiter {
+	top: 42%;
+	right: 40%;
+	font-size: 1.2em;
+	padding-top: 7px;
+}
+
+.positionSaturno {
+	top: 41%;
+	right: 28%;
+	font-size: 1.3em;
+	padding-top: 7px;
+}
+
+.positionUrano {
+	top: 41%;
+	right: 15%;
+	font-size: 1.1em;
+	padding-top: 7px;
+}
+
+.positionNeptuno {
+	top: 41%;
+	right: 10%;
+	font-size: 1.2em;
+	padding-top: 7px;
+}
